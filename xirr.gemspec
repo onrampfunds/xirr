@@ -18,12 +18,14 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_development_dependency 'bundler', '~> 1.6'
-  spec.add_development_dependency 'rake', '>= 10', '<= 12.3'
-
   spec.required_ruby_version = '>=2.2.2'
-  spec.add_dependency 'activesupport', '>= 4.2', '< 5.3'
-  spec.add_development_dependency 'minitest', '~> 5.4'
-  spec.add_development_dependency 'coveralls', '~> 0'
 
+  spec.add_dependency 'activesupport', '>= 4.1'
+  spec.add_dependency 'RubyInline', '~> 3'
+
+  spec.add_development_dependency 'activesupport', '>= 4.1.0'
+  spec.add_development_dependency 'minitest', '~> 5.11'
+  spec.add_development_dependency 'coveralls', '~> 0'
+  spec.add_development_dependency 'bundler', '~> 2.3'
+  spec.add_development_dependency 'rake', '~> 10'
 end
